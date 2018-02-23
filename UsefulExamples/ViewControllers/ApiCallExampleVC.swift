@@ -9,15 +9,23 @@
 import UIKit
 import SwiftyJSON
 
-class ApiCallExampleVC: ViewController, UITableViewDataSource{
+class ApiCallExampleVC: ViewController, UITableViewDataSource, UITableViewDelegate{
     
     @IBOutlet var tableView:UITableView!
     
     var data:JSON!
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(data.count)
-        return (data?.count)!
+        
+        if data  == nil{
+            return 0
+        }
+        
+        return data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
