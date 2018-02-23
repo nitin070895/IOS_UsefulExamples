@@ -33,10 +33,15 @@ class ApiCallExampleVC: ViewController, UITableViewDataSource, UITableViewDelega
     // table cell item
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(indexPath)
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as! UserTableViewCell
         
-        let gender = data[indexPath.row].gender
-        cell.textLabel?.text = gender
+        var user:UserData = data[indexPath.row]
+        
+        cell.name.text = user.name
+        let url = URL(string: user.picture!)
+        let imageData = try? Data(contentsOf: url!)
+        cell.userImage?.image = UIImage(data: imageData!)
+        cell.email.text = user.email
         
         return cell
     }

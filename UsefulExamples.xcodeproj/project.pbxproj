@@ -19,6 +19,7 @@
 		94B69104203FE1F10068C2DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B69102203FE1F10068C2DA /* Main.storyboard */; };
 		94B69106203FE1F10068C2DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94B69105203FE1F10068C2DA /* Assets.xcassets */; };
 		94B69109203FE1F10068C2DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B69107203FE1F10068C2DA /* LaunchScreen.storyboard */; };
+		94F789E420409EA1007C29ED /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F789E320409EA1007C29ED /* UserTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,7 @@
 		94B69105203FE1F10068C2DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94B69108203FE1F10068C2DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94B6910A203FE1F10068C2DA /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		94F789E320409EA1007C29ED /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		94B690FD203FE1F10068C2DA /* UsefulExamples */ = {
 			isa = PBXGroup;
 			children = (
+				94F789E220409E7B007C29ED /* TableCells */,
 				94B23F6C20408F940036AD50 /* Configs */,
 				94B23F6920408D2D0036AD50 /* Models */,
 				94792E9F203FEC1D0092F3D0 /* Helpers */,
@@ -136,6 +139,14 @@
 				94792EA4203FFF1E0092F3D0 /* ApiCallExampleVC.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		94F789E220409E7B007C29ED /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				94F789E320409EA1007C29ED /* UserTableViewCell.swift */,
+			);
+			path = TableCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +226,7 @@
 				94B69101203FE1F10068C2DA /* ViewController.swift in Sources */,
 				94B690FF203FE1F10068C2DA /* AppDelegate.swift in Sources */,
 				94B23F6E20408FA70036AD50 /* AppConfig.swift in Sources */,
+				94F789E420409EA1007C29ED /* UserTableViewCell.swift in Sources */,
 				94792EA3203FFE8F0092F3D0 /* RestApiManager.swift in Sources */,
 				94792EA5203FFF1E0092F3D0 /* ApiCallExampleVC.swift in Sources */,
 				94792EA1203FEC340092F3D0 /* HelperFunctions.swift in Sources */,
