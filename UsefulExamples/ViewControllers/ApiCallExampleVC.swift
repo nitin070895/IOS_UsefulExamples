@@ -13,41 +13,42 @@ class ApiCallExampleVC: ViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet var tableView:UITableView!
     
-    var data:JSON!
+    var data = [UserData]()
     
+    // number of sections
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
+    // number of items in each section
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if data  == nil{
+        if data == nil{
             return 0
         }
         
         return data.count
     }
     
+    // table cell item
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(indexPath)
         let cell = UITableViewCell()
         
-        let gender = (data[indexPath.row]["gender"]).rawString()
+        let gender = data[indexPath.row].gender
         cell.textLabel?.text = gender
         
         return cell
     }
     
-    var URL_API = "http://api.randomuser.me/"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        RestApiManager.instance.callApi(url: URL_API, onCompletion: {json in
+        RestApiManager.instance.callApi(url: AppConfig.URL_USERS, onCompletion: {json in
             
-            self.data = json["results"]
-            for _ in self.data!{
-            
+            let result = json["results"]
+            for user in result{
+                self.data.append(UserData(json: user.1))
             }
             
             DispatchQueue.main.async {

@@ -12,6 +12,8 @@
 		94792EA5203FFF1E0092F3D0 /* ApiCallExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94792EA4203FFF1E0092F3D0 /* ApiCallExampleVC.swift */; };
 		94792EA8204012890092F3D0 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94792EA7204012890092F3D0 /* SwiftyJSON.framework */; };
 		94792EA9204012890092F3D0 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94792EA7204012890092F3D0 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		94B23F6B20408D4F0036AD50 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B23F6A20408D4F0036AD50 /* UserData.swift */; };
+		94B23F6E20408FA70036AD50 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B23F6D20408FA70036AD50 /* AppConfig.swift */; };
 		94B690FF203FE1F10068C2DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B690FE203FE1F10068C2DA /* AppDelegate.swift */; };
 		94B69101203FE1F10068C2DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B69100203FE1F10068C2DA /* ViewController.swift */; };
 		94B69104203FE1F10068C2DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B69102203FE1F10068C2DA /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 		94792EA2203FFE8F0092F3D0 /* RestApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
 		94792EA4203FFF1E0092F3D0 /* ApiCallExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCallExampleVC.swift; sourceTree = "<group>"; };
 		94792EA7204012890092F3D0 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
+		94B23F6A20408D4F0036AD50 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		94B23F6D20408FA70036AD50 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		94B690FB203FE1F10068C2DA /* UsefulExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsefulExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B690FE203FE1F10068C2DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94B69100203FE1F10068C2DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +72,22 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		94B23F6920408D2D0036AD50 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				94B23F6A20408D4F0036AD50 /* UserData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		94B23F6C20408F940036AD50 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				94B23F6D20408FA70036AD50 /* AppConfig.swift */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
 		94B690F2203FE1F10068C2DA = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +108,8 @@
 		94B690FD203FE1F10068C2DA /* UsefulExamples */ = {
 			isa = PBXGroup;
 			children = (
+				94B23F6C20408F940036AD50 /* Configs */,
+				94B23F6920408D2D0036AD50 /* Models */,
 				94792E9F203FEC1D0092F3D0 /* Helpers */,
 				94B69111203FE2200068C2DA /* ViewControllers */,
 				94B69110203FE2000068C2DA /* Storyboards */,
@@ -189,8 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94B23F6B20408D4F0036AD50 /* UserData.swift in Sources */,
 				94B69101203FE1F10068C2DA /* ViewController.swift in Sources */,
 				94B690FF203FE1F10068C2DA /* AppDelegate.swift in Sources */,
+				94B23F6E20408FA70036AD50 /* AppConfig.swift in Sources */,
 				94792EA3203FFE8F0092F3D0 /* RestApiManager.swift in Sources */,
 				94792EA5203FFF1E0092F3D0 /* ApiCallExampleVC.swift in Sources */,
 				94792EA1203FEC340092F3D0 /* HelperFunctions.swift in Sources */,
