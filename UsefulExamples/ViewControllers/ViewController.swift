@@ -12,6 +12,13 @@ class ViewController: UIViewController {
 
     var helper:HelperFunctions = HelperFunctions()
     
+    @IBAction func openDifferentStoryboard(){
+
+        let differentStoryBoard = UIStoryboard(name: "DifferentStoryboard", bundle: nil)
+        let differentViewController = differentStoryBoard.instantiateViewController(withIdentifier: "DifferentViewController")
+        self.present(differentViewController, animated: false, completion: nil)
+    }
+    
     @IBAction func showMessage(){
 
         helper.showAlertMessage(message: "Hello!", root: self.view, context: self)

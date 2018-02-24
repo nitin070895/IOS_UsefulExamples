@@ -21,7 +21,7 @@ class RestApiManager: NSObject {
         })
     }
 
-    func makeApiCall(route: String, onCompletion: @escaping (JSON) -> Void) {
+    private func makeApiCall(route: String, onCompletion: @escaping (JSON) -> Void) {
         
         let request = URLRequest(url: URL(string: route)!)
         let session = URLSession.shared

@@ -12,6 +12,8 @@
 		94792EA5203FFF1E0092F3D0 /* ApiCallExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94792EA4203FFF1E0092F3D0 /* ApiCallExampleVC.swift */; };
 		94792EA8204012890092F3D0 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94792EA7204012890092F3D0 /* SwiftyJSON.framework */; };
 		94792EA9204012890092F3D0 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 94792EA7204012890092F3D0 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		94AAF60820415E5800724A01 /* DifferentStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94AAF60720415E5800724A01 /* DifferentStoryboard.storyboard */; };
+		94AAF60A20415F0A00724A01 /* DifferentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AAF60920415F0A00724A01 /* DifferentViewController.swift */; };
 		94B23F6B20408D4F0036AD50 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B23F6A20408D4F0036AD50 /* UserData.swift */; };
 		94B23F6E20408FA70036AD50 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B23F6D20408FA70036AD50 /* AppConfig.swift */; };
 		94B690FF203FE1F10068C2DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B690FE203FE1F10068C2DA /* AppDelegate.swift */; };
@@ -41,6 +43,8 @@
 		94792EA2203FFE8F0092F3D0 /* RestApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
 		94792EA4203FFF1E0092F3D0 /* ApiCallExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCallExampleVC.swift; sourceTree = "<group>"; };
 		94792EA7204012890092F3D0 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
+		94AAF60720415E5800724A01 /* DifferentStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DifferentStoryboard.storyboard; sourceTree = "<group>"; };
+		94AAF60920415F0A00724A01 /* DifferentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentViewController.swift; sourceTree = "<group>"; };
 		94B23F6A20408D4F0036AD50 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		94B23F6D20408FA70036AD50 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		94B690FB203FE1F10068C2DA /* UsefulExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsefulExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +132,7 @@
 			children = (
 				94B69102203FE1F10068C2DA /* Main.storyboard */,
 				94B69107203FE1F10068C2DA /* LaunchScreen.storyboard */,
+				94AAF60720415E5800724A01 /* DifferentStoryboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 			children = (
 				94B69100203FE1F10068C2DA /* ViewController.swift */,
 				94792EA4203FFF1E0092F3D0 /* ApiCallExampleVC.swift */,
+				94AAF60920415F0A00724A01 /* DifferentViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -210,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94B69109203FE1F10068C2DA /* LaunchScreen.storyboard in Resources */,
+				94AAF60820415E5800724A01 /* DifferentStoryboard.storyboard in Resources */,
 				94B69106203FE1F10068C2DA /* Assets.xcassets in Resources */,
 				94B69104203FE1F10068C2DA /* Main.storyboard in Resources */,
 			);
@@ -223,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94B23F6B20408D4F0036AD50 /* UserData.swift in Sources */,
+				94AAF60A20415F0A00724A01 /* DifferentViewController.swift in Sources */,
 				94B69101203FE1F10068C2DA /* ViewController.swift in Sources */,
 				94B690FF203FE1F10068C2DA /* AppDelegate.swift in Sources */,
 				94B23F6E20408FA70036AD50 /* AppConfig.swift in Sources */,

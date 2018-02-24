@@ -32,18 +32,25 @@ class ApiCallExampleVC: ViewController, UITableViewDataSource, UITableViewDelega
     
     // table cell item
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print(indexPath)
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as! UserTableViewCell
         
         var user:UserData = data[indexPath.row]
         
-        cell.name.text = user.name
+        cell.name.text = user.name!
         let url = URL(string: user.picture!)
         let imageData = try? Data(contentsOf: url!)
         cell.userImage?.image = UIImage(data: imageData!)
         cell.email.text = user.email
         
         return cell
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 150
+    }
+    
+    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 150
     }
     
     override func viewDidLoad() {
@@ -53,7 +60,9 @@ class ApiCallExampleVC: ViewController, UITableViewDataSource, UITableViewDelega
             
             let result = json["results"]
             for user in result{
-                self.data.append(UserData(json: user.1))
+                for _ in 0 ... 10{
+                    self.data.append(UserData(json: user.1))
+                }
             }
             
             DispatchQueue.main.async {
